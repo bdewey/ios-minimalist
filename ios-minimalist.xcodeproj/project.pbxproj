@@ -224,7 +224,7 @@
 			dependencies = (
 			);
 			name = "ios-minimalist";
-			productName = "ios-boilerplate";
+			productName = "ios-minimalist";
 			productReference = D35543E6154A5906005F4473 /* ios-minimalist.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -242,7 +242,7 @@
 			dependencies = (
 			);
 			name = UnitTests;
-			productName = "ios-boilerplate";
+			productName = "ios-minimalist";
 			productReference = D383155E154A6E6300039E9F /* UnitTests.app */;
 			productType = "com.apple.product-type.application";
 		};
