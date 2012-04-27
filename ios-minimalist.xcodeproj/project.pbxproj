@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D35543E6154A5906005F4473 /* ios-boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35543E6154A5906005F4473 /* ios-minimalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-minimalist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35543EA154A5906005F4473 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D35543EC154A5906005F4473 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D35543EE154A5906005F4473 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,7 +128,7 @@
 		D35543E7154A5906005F4473 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D35543E6154A5906005F4473 /* ios-boilerplate.app */,
+				D35543E6154A5906005F4473 /* ios-minimalist.app */,
 				D383155E154A6E6300039E9F /* UnitTests.app */,
 			);
 			name = Products;
@@ -211,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D35543E5154A5906005F4473 /* ios-boilerplate */ = {
+		D35543E5154A5906005F4473 /* ios-minimalist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D35543FE154A5906005F4473 /* Build configuration list for PBXNativeTarget "ios-boilerplate" */;
+			buildConfigurationList = D35543FE154A5906005F4473 /* Build configuration list for PBXNativeTarget "ios-minimalist" */;
 			buildPhases = (
 				D35543E2154A5906005F4473 /* Sources */,
 				D35543E3154A5906005F4473 /* Frameworks */,
@@ -223,9 +223,9 @@
 			);
 			dependencies = (
 			);
-			name = "ios-boilerplate";
+			name = "ios-minimalist";
 			productName = "ios-boilerplate";
-			productReference = D35543E6154A5906005F4473 /* ios-boilerplate.app */;
+			productReference = D35543E6154A5906005F4473 /* ios-minimalist.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D3831551154A6E6300039E9F /* UnitTests */ = {
@@ -255,7 +255,7 @@
 				CLASSPREFIX = IOB;
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = D35543E0154A5906005F4473 /* Build configuration list for PBXProject "ios-boilerplate" */;
+			buildConfigurationList = D35543E0154A5906005F4473 /* Build configuration list for PBXProject "ios-minimalist" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D35543E5154A5906005F4473 /* ios-boilerplate */,
+				D35543E5154A5906005F4473 /* ios-minimalist */,
 				D3831551154A6E6300039E9F /* UnitTests */,
 			);
 		};
@@ -451,7 +451,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D35543E0154A5906005F4473 /* Build configuration list for PBXProject "ios-boilerplate" */ = {
+		D35543E0154A5906005F4473 /* Build configuration list for PBXProject "ios-minimalist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D35543FC154A5906005F4473 /* Debug */,
@@ -460,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D35543FE154A5906005F4473 /* Build configuration list for PBXNativeTarget "ios-boilerplate" */ = {
+		D35543FE154A5906005F4473 /* Build configuration list for PBXNativeTarget "ios-minimalist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D35543FF154A5906005F4473 /* Debug */,
