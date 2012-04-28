@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AE23D4C154C310300F47909 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE23D48154C310300F47909 /* libTestFlight.a */; };
+		0AE23D4D154C310300F47909 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AE23D49154C310300F47909 /* README.txt */; };
+		0AE23D4E154C310300F47909 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AE23D4A154C310300F47909 /* release_notes.txt */; };
 		D35543EB154A5906005F4473 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35543EA154A5906005F4473 /* UIKit.framework */; };
 		D35543ED154A5906005F4473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35543EC154A5906005F4473 /* Foundation.framework */; };
 		D35543EF154A5906005F4473 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35543EE154A5906005F4473 /* CoreGraphics.framework */; };
@@ -38,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AE23D48154C310300F47909 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		0AE23D49154C310300F47909 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		0AE23D4A154C310300F47909 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		0AE23D4B154C310300F47909 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		D35543E6154A5906005F4473 /* ios-minimalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-minimalist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35543EA154A5906005F4473 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D35543EC154A5906005F4473 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +99,7 @@
 				D35543EB154A5906005F4473 /* UIKit.framework in Frameworks */,
 				D35543ED154A5906005F4473 /* Foundation.framework in Frameworks */,
 				D35543EF154A5906005F4473 /* CoreGraphics.framework in Frameworks */,
+				0AE23D4C154C310300F47909 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE23D47154C310300F47909 /* TestFlight */ = {
+			isa = PBXGroup;
+			children = (
+				0AE23D48154C310300F47909 /* libTestFlight.a */,
+				0AE23D49154C310300F47909 /* README.txt */,
+				0AE23D4A154C310300F47909 /* release_notes.txt */,
+				0AE23D4B154C310300F47909 /* TestFlight.h */,
+			);
+			path = TestFlight;
+			sourceTree = "<group>";
+		};
 		D35543DB154A5906005F4473 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +136,7 @@
 				D35543F6154A5906005F4473 /* main.m */,
 				D35543F0154A5906005F4473 /* Classes */,
 				D3831595154A724D00039E9F /* UnitTests */,
+				0AE23D47154C310300F47909 /* TestFlight */,
 				D3831561154A6ECB00039E9F /* GTM */,
 				D35543E9154A5906005F4473 /* Frameworks */,
 				D35543E7154A5906005F4473 /* Products */,
@@ -279,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35543F5154A5906005F4473 /* InfoPlist.strings in Resources */,
+				0AE23D4D154C310300F47909 /* README.txt in Resources */,
+				0AE23D4E154C310300F47909 /* release_notes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +429,10 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlight\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,6 +445,10 @@
 				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlight\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

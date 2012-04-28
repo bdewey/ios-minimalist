@@ -20,6 +20,12 @@
 
 #import "AppDelegate.h"
 
+// #define kTestFlightTeamKey                    @"YOUR TEAM KEY HERE"
+
+#ifndef kTestFlightTeamKey
+#warning "Define your TestFlight team key!"
+#endif
+
 @implementation AppDelegate
 
 @synthesize window = window_;
@@ -35,6 +41,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
+#ifdef kTestFlightTeamKey
+  [TestFlight takeOff:kTestFlightTeamKey];
+  
+#ifdef DEBUG
+  [TestFlight setDeviceIdentifier:[[UIDevice mainDevice] uniqueIdentifier]];
+#endif // DEBUG
+#endif // kTestFlightTeamKey
   
   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
